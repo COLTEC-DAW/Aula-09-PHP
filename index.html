@@ -1,0 +1,763 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <title>PHP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=792, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="libs/shower/themes/bright/styles/screen.css">
+  <link rel="stylesheet" href="libs/highlight/styles/default.css">
+  <link rel="stylesheet" type="text/css" href="css/960gs.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style type="text/css">
+    pre code {
+      font-size: 0.7em;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+    }
+  </style>
+
+  </head>
+  <body class="list">
+    <header class="caption">
+      <h1>PHP</h1>
+      <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+    </header>
+
+    <section class="slide cover" id="Cover">
+      <div>
+        <h2>PHP</h2>
+        <p>João Eduardo Montandon</p>
+        <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+        <img src="images/wallpaper_coltec_wide.png" alt="" />
+
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Introdução</h2>
+        <p>
+          Desenvolvida por Rasmus Lerdorf em 1995: "PHP/FI (Personal Home Page/ Forms Interpreter)".
+        </p>
+        <p>
+          Hoje: "PHP: Hypertext Processing".
+        </p>
+        <p>
+          Linguagem de Programação voltada para desenvolvimento de páginas <b>dinâmicas</b> na Internet.
+        </p>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Introdução</h2>
+        <p>
+          Principais características:
+        </p>
+        <ul>
+          <li><a href="http://www.php.net">Open Source</a></li>
+          <li>Embutido no HTML <span style="font-size: 55%;"><b>(CUIDADO!!)</b></span></li>
+          <li>Server side</li>
+          <li>Banco de Dados</li>
+          <li>Portabilidade</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Instalação</h2>
+        <p>
+          Para desenvolver uma página utilizando PHP, são necessários os seguintes softwares:
+        </p>
+        <ol>
+          <li>PHP</li>
+          <li>Apache</li>
+          <li>Banco de Dados: MySQL ou PostgreSQL</li>
+        </ol>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>Instalação: The Hard Way</h2>
+        <ol>
+          <li>
+            Baixar, instalar e configurar interpretador de PHP <span class="note"><a href="http://php.net/downloads.php">link</a></span>
+          </li>
+          <li>
+            Baixar, instalar e configurar o servidor Apache <span class="note"><a href="http://httpd.apache.org/download.cgi">link</a></span>
+          </li>
+          <li>
+            Baixar, instalar e configurar o banco de dados <span class="note">(<a href="http://dev.mysql.com/downloads/mysql/">MySQL</a> ou <a href="http://www.postgresql.org/download/">PostgreSQL</a>)</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div class="container_12">
+        <h2>Instalação: The Easy Way</h2>
+        <div class="grid_12">
+          <p>
+            Baixar e instalar um <em>bundle</em> de desenvolvimento
+          </p>
+        </div>
+        <div class="grid_4" style="text-align: center;">
+          <img src="images/mamp.png" style="max-width: 100%;" alt="" />
+          <a href="http://www.mamp.info/">MAMP</a>
+        </div>
+        <div class="grid_4" style="text-align: center;">
+          <img src="images/xampp.png" style="max-width: 70%;" alt="" />
+          <a href="https://www.apachefriends.org/">XAMPP</a>
+        </div>
+        <div class="grid_4" style="text-align: center;">
+          <img src="images/wamp.png" style="max-width: 70%;" alt="" />
+          <a href="http://www.wampserver.com/en/">WAMP</a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h1>PHP: Hello, Script</h1>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div class="container_12">
+        <div class="grid_12">
+          <h2>PHP: Hello, Script</h2>
+          <pre>
+            <code>
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;?php
+      $now = date("d/m/Y", time());
+      echo "Olá, Terráqueo. Agora são: ";
+    ?&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div class="container_12">
+        <div class="grid_12">
+          <h2>PHP: Hello, Script</h2>
+        </div>
+        <div class="grid_6">
+          <pre>
+            <code>
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;?php
+      $now = date("d/m/Y", time());
+      echo "Olá, Terráqueo. Agora são: $now";
+    ?&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </code>
+          </pre>
+        </div>
+        <div class="grid_6" style="font-size: 0.9em;">
+          <p>
+            <code>&lt;?php ?&gt;</code> Delimita código PHP.
+          </p>
+          <p>
+            <code>$now = ...</code> Cria uma variável chamada now.
+          </p>
+          <p>
+            <code>echo "..."</code> Imprime algo na tela.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h1>PHP: Tipos de dados &amp; Variáveis</h1>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Tipos de dados</h2>
+        <p>
+          PHP possui quatro tipos de dados:
+        </p>
+        <ul>
+          <li>Numéricas</li>
+          <li>Strings</li>
+          <li>Arrays</li>
+          <li>Objetos</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Tipo numérico</h2>
+        <p>
+          Representa qualquer valo numérico, podendo ser inteiro ou real
+        </p>
+        <pre>
+          <code>
+$inteiro = 10;
+$real = 3.14;
+$hexa = 0x0b;
+          </code>
+        </pre>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Tipo String</h2>
+        <p>
+          Representa uma sequencia alfanumérica, podendo ser fornecida por meio de aspas duplas (") ou simples(')
+        </p>
+        <pre>
+          <code>
+echo "Olá, $nome";
+echo 'Olá, $nome';
+          </code>
+        </pre>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>Sidebar: Aspas Invertidas</h2>
+        <p>
+          As aspas invertidas (`) permitem que o PHP execute comandos do sistema operacional
+        </p>
+        <pre>
+          <code>
+&lt;?php
+  echo `ls -la`;
+?&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Tipo Array</h2>
+        <p>
+          Os vetores (arrays) são variáveis capazes de armazenar mais de um valor ao mesmo tempo.
+        </p>
+        <p>
+          A notação utilizada por PHP é a mesma utilizada por Java (<code>[ ]</code>)
+        </p>
+        <p>
+          Os índices podem ser definidos tanto por valores númericos e strings.
+        </p>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Tipo Array</h2>
+        <pre>
+          <code>
+$vetor[0] = 30;
+$vetor[1] = 40;
+$vetor[2] = 50;
+$vetor[3] = 60;
+          </code>
+        </pre>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Tipo Array</h2>
+        <p>
+          É possível inserir valores no array sem que seja necessário fornecer um índice.
+        </p>
+        <p>
+          Neste caso, o PHP irá inserir este elemento no final do array.
+        </p>
+        <pre>
+          <code>$vet[ ] = "Cruzeiro";
+$vet[ ] = "bi campeão";
+
+echo "o $vet[0] é $vet[1] da américa!!";
+          </code>
+        </pre>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Tipo Object</h2>
+        <p>
+          PHP também possui suporte a classes e objetos
+        </p>
+        <pre>
+          <code>class Pessoa {
+  function saudacao() {
+    echo "Olá pessoal!!";
+  }
+}
+
+$jose = new Pessoa;
+jose-&gt;saudacao();
+          </code>
+        </pre>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Constantes</h2>
+        <p>
+          Valores predefinidos no início do programa. Em PHP, constantes podem ser <em>case-insensitive</em>.
+        </p>
+        <pre>
+          <code>bool define(string nome, object valor [, bool case_insensitive]);
+          </code>
+        </pre>
+        <pre>
+          <code>define ("PI", 3.14, false);
+echo "O valor de PI é " . PI;
+          </code>
+        </pre>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Variáveis</h2>
+        <p>
+          As variáveis em PHP são identificadas por meio do símbolo <code>$</code>
+        </p>
+        <ul>
+          <li>Possuem tipo implícito</li>
+          <li>Nomenclatura similar a de variáveis em C</li>
+          <li>São <em>case-sensitive</em></li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>Variáveis: Escopo</h2>
+        <p>
+          Uma variável pode ser <b>local</b> ou <b>global</b>
+        </p>
+        <ul>
+          <li>local: visível apenas no escopo da função no qual a variável foi declarada.</li>
+          <li>global: visível em todo o programa</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>Variáveis: Escopo global </h2>
+        <p>
+          Podemos acessar variáveis de escopo global de duas formas
+        </p>
+        <ul>
+          <li>Diretamente, por meio do comando <code>global $variavel.</code></li>
+          <li>Por meio do vetor associativo <code>$GLOBALS</code></li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div class="container_12">
+        <h2>PHP: Variáveis</h2>
+        <div class="grid_6">
+          <pre>
+            <code>
+$num = 5000;
+function escopo() {
+  global $num;
+  $num += 5;
+  echo $num . "&lt;br&gt;";
+}
+
+echo $num . "&lt;br&gt;";
+escopo();
+            </code>
+          </pre>
+        </div>
+        <div class="grid_6">
+          <pre>
+            <code>
+$num = 5000;
+function escopo() {
+  GLOBALS["num"] += 5;
+  echo GLOBALS["num"] . "&lt;br&gt;";
+}
+
+echo $num . "&lt;br&gt;";
+escopo();
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Conversão de valores</h2>
+        <table>
+          <tr>
+            <td>
+              <b>Conversor</b>
+            </td>
+            <td>
+              <b>Descrição</b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>(int)</code>, <code>(integer)</code>
+            </td>
+            <td>
+              Converte para inteiro.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>(real)</code>, <code>(float)</code>, <code>(double)</code>
+            </td>
+            <td>
+              Converte para ponto flutuante
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>(string)</code>
+            </td>
+            <td>
+              Converte para string
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>(array)</code>
+            </td>
+            <td>
+              Converte para array
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>(object)</code>
+            </td>
+            <td>
+              Converte para object
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Operadores Aritméticos</h2>
+        <pre>
+          <code>
+            $a = a + 1; // adição
+            $a = a * 5; // multiplicação
+            $a = a / 3; // divisão
+            $a = a - 1; // subtração
+            $a = a % 1; // resto
+            echo "$a++"; // Pós-incremento
+            echo "++$a"; // Pré-incremento
+            echo "$a--"; // Pós-decremento
+            echo "--$a"; // Pré-decremento
+          </code>
+        </pre>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Operadores Binários</h2>
+        <table>
+          <tr>
+            <td>
+              <b>Operador</b>
+            </td>
+            <td>
+              <b>Descrição</b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>~$var</code>
+            </td>
+            <td>
+              Inverte os bits de $var
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>$var1 &amp; $var2</code>
+            </td>
+            <td>
+              AND bit a bit
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>$var1 | $var2</code>
+            </td>
+            <td>
+              OR bit a bit
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>$var1 ^ $var2</code>
+            </td>
+            <td>
+              XOR bit a bit
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>$var &gt;&gt; N</code>
+            </td>
+            <td>
+              Deslocamento de <em>N</em> bits à direita
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>$var &lt;&lt; N</code>
+            </td>
+            <td>
+              Deslocamento de <em>N</em> bit à esquerda
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Operadores de Comparação</h2>
+        <table>
+          <tr>
+            <td>
+              <b>Operador</b>
+            </td>
+            <td>
+              <b>Descrição</b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>$var1 == $var2</code>
+            </td>
+            <td>
+              <code>$var1</code> igual a <code>$var2</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>$var1 &gt;= $var2</code>
+            </td>
+            <td>
+              <code>$var1</code> maior ou igual a <code>$var2</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>$var1 &lt;= $var2</code>
+            </td>
+            <td>
+              <code>$var1</code> menor ou igual a <code>$var2</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>$var1 &gt; $var2</code>
+            </td>
+            <td>
+              <code>$var1</code> maior que <code>$var2</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>$var &lt; $var2</code>
+            </td>
+            <td>
+              <code>$var1</code> menor que <code>$var2</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>$var != $var2</code> <br> <code>$var1 &lt;&gt; $var2</code>
+            </td>
+            <td>
+              <code>$var1</code> diferente a <code>$var2</code>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>PHP: Operadores Lógicos</h2>
+        <table>
+          <tr>
+            <td>
+              <b>Operador</b>
+            </td>
+            <td>
+              <b>Descrição</b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>!$var1</code>
+            </td>
+            <td>
+              Operador de negação
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>$var1 &amp;&amp; $var2</code>, <code>$var1 AND $var2</code>
+            </td>
+            <td>
+              Operador AND
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>$var1 || $var2</code>, <code>$var1 OR $var2</code>
+            </td>
+            <td>
+              Operador OR
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>$var1 XOR $var2</code>
+            </td>
+            <td>
+              Operador XOR
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+
+    <section class="slide">
+      <div>
+        <h2>Hello, <code>$name</code></h2>
+        <pre>
+          <code>&lt;!DOCTYPE html&gt;
+&lt;?php
+  $name = $_GET['name'];
+?&gt;
+&lt;html&gt;
+&lt;body&gt;
+      &lt;h1&gt;Olá, &lt;?php echo $name?&gt;&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+
+
+    <section class="slide">
+      <div>
+        <h2>Referências</h2>
+          <p>
+            NIEDERAUER, J.; Desenvolvendo Websites com PHP; 2a Edição, 2011; Novatec
+          </p>
+          <p>
+            <a href="http://www.w3schools.com/php/">w3schools: PHP Tutorial</a>
+</p>
+<p>
+  <a href="http://www.php.net">PHP.net</a>
+</p>
+
+          </p>
+      </div>
+    </section>
+
+    <p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
+
+	<!-- Barra de progresso, comente se deseja remover da apresentação -->
+	<div class="progress"><div></div></div>
+	<script src="libs/shower/shower.min.js"></script>
+	<script src="libs/highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
