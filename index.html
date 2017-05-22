@@ -9,36 +9,20 @@
   <link rel="stylesheet" href="libs/highlight/styles/default.css">
   <link rel="stylesheet" type="text/css" href="css/960gs.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <style type="text/css">
-    pre code {
-      font-size: 0.7em;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2.5em;
-    }
-  </style>
-
   </head>
   <body class="list">
     <header class="caption">
       <h1>PHP</h1>
       <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
     </header>
-
     <section class="slide cover" id="Cover">
       <div>
         <h2>PHP</h2>
         <p>João Eduardo Montandon</p>
         <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
         <img src="images/wallpaper_coltec_wide.png" alt="" />
-
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Introdução</h2>
@@ -53,9 +37,6 @@
         </p>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Introdução</h2>
@@ -71,9 +52,6 @@
         </ul>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Instalação</h2>
@@ -87,9 +65,6 @@
         </ol>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>Instalação: The Hard Way</h2>
@@ -106,9 +81,6 @@
         </ol>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div class="container_12">
         <h2>Instalação: The Easy Way</h2>
@@ -131,17 +103,6 @@
         </div>
       </div>
     </section>
-
-
-
-    <section class="slide">
-      <div>
-        <h1>PHP: Hello, Script</h1>
-      </div>
-    </section>
-
-
-
     <section class="slide">
       <div class="container_12">
         <div class="grid_12">
@@ -161,9 +122,6 @@
         </div>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div class="container_12">
         <div class="grid_12">
@@ -196,17 +154,6 @@
         </div>
       </div>
     </section>
-
-
-
-    <section class="slide">
-      <div>
-        <h1>PHP: Tipos de dados &amp; Variáveis</h1>
-      </div>
-    </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Tipos de dados</h2>
@@ -221,9 +168,6 @@
         </ul>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Tipo numérico</h2>
@@ -239,9 +183,6 @@ $hexa = 0x0b;
         </pre>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Tipo String</h2>
@@ -256,9 +197,6 @@ echo 'Olá, $nome';
         </pre>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>Sidebar: Aspas Invertidas</h2>
@@ -274,9 +212,6 @@ echo 'Olá, $nome';
         </pre>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Tipo Array</h2>
@@ -291,9 +226,6 @@ echo 'Olá, $nome';
         </p>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Tipo Array</h2>
@@ -307,9 +239,6 @@ $vetor[3] = 60;
         </pre>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Tipo Array</h2>
@@ -322,15 +251,11 @@ $vetor[3] = 60;
         <pre>
           <code>$vet[ ] = "Cruzeiro";
 $vet[ ] = "bi campeão";
-
 echo "o $vet[0] é $vet[1] da américa!!";
           </code>
         </pre>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Tipo Object</h2>
@@ -343,16 +268,12 @@ echo "o $vet[0] é $vet[1] da américa!!";
     echo "Olá pessoal!!";
   }
 }
-
 $jose = new Pessoa;
 jose-&gt;saudacao();
           </code>
         </pre>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Constantes</h2>
@@ -370,9 +291,6 @@ echo "O valor de PI é " . PI;
         </pre>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Variáveis</h2>
@@ -386,9 +304,6 @@ echo "O valor de PI é " . PI;
         </ul>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>Variáveis: Escopo</h2>
@@ -401,9 +316,6 @@ echo "O valor de PI é " . PI;
         </ul>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>Variáveis: Escopo global </h2>
@@ -416,9 +328,6 @@ echo "O valor de PI é " . PI;
         </ul>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div class="container_12">
         <h2>PHP: Variáveis</h2>
@@ -431,7 +340,6 @@ function escopo() {
   $num += 5;
   echo $num . "&lt;br&gt;";
 }
-
 echo $num . "&lt;br&gt;";
 escopo();
             </code>
@@ -445,7 +353,6 @@ function escopo() {
   GLOBALS["num"] += 5;
   echo GLOBALS["num"] . "&lt;br&gt;";
 }
-
 echo $num . "&lt;br&gt;";
 escopo();
             </code>
@@ -453,9 +360,6 @@ escopo();
         </div>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Conversão de valores</h2>
@@ -511,9 +415,6 @@ escopo();
         </table>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Operadores Aritméticos</h2>
@@ -532,9 +433,6 @@ escopo();
         </pre>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Operadores Binários</h2>
@@ -598,9 +496,6 @@ escopo();
         </table>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Operadores de Comparação</h2>
@@ -664,9 +559,6 @@ escopo();
         </table>
       </div>
     </section>
-
-
-
     <section class="slide">
       <div>
         <h2>PHP: Operadores Lógicos</h2>
@@ -714,8 +606,6 @@ escopo();
         </table>
       </div>
     </section>
-
-
     <section class="slide">
       <div>
         <h2>Hello, <code>$name</code></h2>
@@ -733,8 +623,1598 @@ escopo();
         </pre>
       </div>
     </section>
-
-
+    <!-- ******************* Estruturas de Controle ************************* -->
+    <header class="caption">
+      <h1>PHP: Estruturas de Controle</h1>
+      <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+    </header>
+    <section class="slide cover">
+      <div>
+        <h2>PHP: Estruturas de Controle</h2>
+        <p>João Eduardo Montandon</p>
+        <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Introdução</h2>
+        <p>
+          Estruturas de Controle: Estruturas que permitem "controlar" o comportamento de execução de determinados trechos do código.
+        </p>
+        <p>
+          Principais Estruturas:
+        </p>
+        <ul>
+          <li>Estruturas Condicionais</li>
+          <li>Estruturas de Repetição</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide section">
+      <div>
+        <h2>Estruturas Condicionais</h2>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Estruturas Condicionais</h2>
+        <p>
+          Assim como as demais linguagens, PHP possui as seguintes estruturas condicionais:
+        </p>
+        <ul>
+          <li><code>if() {...} </code></li>
+          <li><code>else {...}</code></li>
+          <li><code>elseif() {...}</code></li>
+          <li><code>switch() {...}</code></li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div class="container_12">
+        <h2>PHP: Comando <code>if</code></h2>
+        <div class="grid_6">
+          <pre>
+            <code>
+if (expressao) {
+} else {
+}
+            </code>
+          </pre>
+        </div>
+        <div class="grid_6">
+          <pre>
+            <code>
+$login = $_GET["login"];
+if ($login == "admin") {
+  echo "UNLIMITED POWEEERRRR";
+} else {
+  echo "Hello, citzen";
+}
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <div class="container_12">
+        <h2>PHP: Comando <code>elseif</code></h2>
+        <div class="grid_6">
+          <pre>
+            <code>
+if (expressao) {
+} elseif(expressao) {
+} else {
+}
+            </code>
+          </pre>
+        </div>
+        <div class="grid_6">
+          <pre>
+            <code>
+$login = $_GET["login"];
+if ($login == "admin") {
+  echo "UNLIMITED POWEEERRRR";
+} elseif($login == "boss") {
+  echo "Hello, boss";
+} else {
+  echo "Access denied";
+}
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <div class="container_12">
+        <div class="grid_12">
+          <h2 style="margin-bottom: 18px;">PHP: O comando <code>switch</code></h2>
+          <p style="margin-bottom: 18px;">
+            Assim como JavaScript, é possível fazer switch de qualquer valor primitivo (números, strings, caracteres, etc.).
+          </p>
+        </div>
+        <div class="grid_6">
+          <pre style="font-size: 0.9em;">
+            <code>switch (n) {
+    case label1:
+        break;
+    case label2:
+        break;
+    // ...
+    default:
+}
+            </code>
+          </pre>
+        </div>
+        <div class="grid_6">
+          <pre style="font-size: 0.9em;">
+            <code>$favcolor = $_GET["color"];
+switch ($favcolor) {
+    case "red":
+        echo "VERMELHO!";
+        break;
+    case "blue":
+        echo "AZUL!";
+        break;
+    default:
+        echo "...";
+}
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+    <section class="slide section">
+      <div>
+        <h2>Estruturas de Repetição</h2>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Estruturas de Repetição</h2>
+        <p>
+          Suporte as principais estruturas de repetição:
+        </p>
+        <ul>
+          <li><code>while (condicao) {...}</code></li>
+          <li><code>do {...} while(condicao);</code></li>
+          <li><code>for(exp; exp; exp) {...}</code></li>
+          <li><code>foreach($var as $col) {...}</code></li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>PHP: O comando <code>while</code></h2>
+        <pre>
+          <code>
+$password = $_GET['passwd'];
+while($password != $adminPassword) {
+  echo "Senha inválida, tente novamente";
+}
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>PHP: O comando <code>do-while</code></h2>
+        <pre>
+          <code>
+$numero = 1;
+do {
+  echo "o valor atual de número é $numero &lt;br&gt;";
+  $numero++;
+} while($numero &lt; 100);
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>PHP: O comando <code>for</code></h2>
+        <pre>
+          <code>
+for($cont = 0; $cont &lt; 10; $cont++) {
+  echo "A variável \$cont vale $cont";
+  echo "&lt;br&gt;"
+}
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div class="container_12">
+        <div class="grid_12">
+          <h2>PHP: O comando <code>foreach</code></h2>
+          <p>
+            O PHP fornece um comando de repetição que iterage sobre todos os elementos de uma coleção (vetor).
+          </p>
+        </div>
+        <div class="grid_6">
+          <pre>
+            <code>
+foreach($nome_vetor as $elemento) {
+  &lt;comandos&gt;
+}
+            </code>
+          </pre>
+        </div>
+        <div class="grid_6">
+          <pre>
+            <code>
+foreach($nome_vetor as $chave =&gt; $valor) {
+  &lt;comandos&gt;
+}
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <div class="container_12">
+        <h2>PHP: O comando <code>foreach</code></h2>
+        <div class="grid_6">
+          <pre>
+            <code>
+$elementos = array (1, 2, 3, 4, 5);
+foreach($elementos as $elemento) {
+  echo "O valor atual é $elemento";
+  echo "&lt;br&gt;";
+}
+            </code>
+          </pre>
+        </div>
+        <div class="grid_6">
+          <pre>
+            <code>
+$endereco = array ("rua" =&gt; "Malva",
+  "numero" =&gt; 192, "apto" =&gt; 210);
+foreach($endereco as $chave =&gt; $valor) {
+  echo "\$endereco[$chave] = $valor";
+  echo "&lt;br&gt;";
+}
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+<!--
+    <section class="slide">
+      <div>
+        <h2>PHP: Estruturas de Controle</h2>
+        <pre style="font-size: 0.85em;">
+          <code>&lt;html&gt;
+&lt;body&gt;
+  &lt;table&gt;
+    &lt;?php for($i = 0; $i &lt;= $_GET['max']; $i++) { ?&gt;
+    &lt;tr&gt;
+      &lt;?php
+        if($i % 2 == 0)
+          $tipo = "par";
+        else
+          $tipo = "impar";
+      ?&gt;
+      &lt;td&gt; &lt;?php echo "$i" ?&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;?php echo "$tipo" ?&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;?php } ?&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+ -->
+ <!-- ***********************Funções ************************* -->
+ <header class="caption">
+      <h1>PHP: Funções</h1>
+      <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+    </header>
+    <section class="slide cover">
+      <div>
+        <h2>PHP: Funções</h2>
+        <p>João Eduardo Montandon</p>
+        <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Introdução</h2>
+        <p>
+          Funções são trechos de código que processam tarefas rotineiras.
+        </p>
+        <p>
+          <em>Exemplos: Validar CPF, transformar string em caixa alta, etc.</em>
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Sintaxe Básica</h2>
+        <pre>
+          <code>
+function nome_funcao(arg1, arg2, arg3, ... argN) {
+  comandos
+  [ return &lt; expressao &gt; ]
+}
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Sintaxe Básica</h2>
+        <pre>
+          <code>&lt;?php
+  function soma_valores($v1, $v2, $v3) {
+    $soma = $v1 + $v2 + $v3;
+    echo "$v1 + $v2 + $v3 = $soma";
+  }
+  soma_valores(10, 20, 30);
+?&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>O Comando <code>return</code></h2>
+        <p>
+          Toda vez que quisermos retornar um valor da função, utilizamos o comando <code>return</code>.
+        </p>
+        <p>
+          Da mesma forma que acontece em JavaScript, não precisamos especificar o tipo de retorno da função. Basta utilizar o <code>return</code> para retornar o valor.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>O Comando <code>return</code></h2>
+        <pre>
+          <code>function valida_nome($palavra) {
+  if(ctype_alpha($palavra))
+    return strtoupper($palavra);
+  else
+    return NULL;
+}
+$nome = valida_nome("PedroHenrique");
+echo "$nome";
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Parâmetros: Valor &amp; Referência</h2>
+        <p>
+          PHP suporta passagem por valor e referência. Por padrão, a passagem é feita por valor.
+        </p>
+        <p>
+          Se quiser passar por referência, devemos passar a referência da variável (&amp;).
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Parâmetros: Valor &amp; Referência</h2>
+        <pre>
+          <code style="font-size: 0.7em;">function dobro($valor) {
+  $valor = $valor * 2;
+}
+function duplica(&amp;$valor) {
+  $valor = $valor * 2;
+}
+$valor = 5;
+dobro($valor);
+echo $valor . "&lt;br&gt;";
+duplica($valor);
+echo $valor;
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Parâmetros: Valores-padrão</h2>
+        <p>
+          Recurso que injeta um valor <em>default</em> em um parâmetro, caso ele não seja fornecido.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Parâmetros: Valores-padrão</h2>
+        <pre>
+          <code>
+function nacionalidade($nome, $pais = "Brasil") {
+  echo "$nome nasceu no(a) $pais";
+}
+nacionalidade("Henry", "França");
+nacionalidade("Ronaldo");
+          </code>
+        </pre>
+      </div>
+    </section>
+<!-- ********************* Include *************************** -->
+<header class="caption">
+      <h1>PHP: Includes</h1>
+      <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+    </header>
+    <section class="slide cover">
+      <div>
+        <h2>PHP: Utilizando Includes em PHP</h2>
+        <p>João Eduardo Montandon</p>
+        <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Introdução</h2>
+        <p>
+          Em um sistema web, é muito comum que trechos de código HTML se repitam entre as páginas (menu, cabeçalho, rodapé, etc.).
+        </p>
+        <p>
+          <b>Problema:</b> Manutenção é custosa (Se o nome de uma opção do menu mudar, esse nome deve mudar em todas as páginas!!)
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Introdução</h2>
+        <p>
+          PHP fornece uma forma de modularizar trechos de código que são comuns entre as páginas.
+        </p>
+        <p>
+          Desta forma, toda vez que você precisar daquele "pedaço" da página, basta importá-lo.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>O Comando <code>include</code></h2>
+        <p>
+          Comando responsável por importar um arquivo dentro de outro.
+        </p>
+        <pre>
+          <code>
+          &lt;?php include "nome_do_arquivo"; ?&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>O Comando <code>include</code></h2>
+        <pre>
+          <code style="font-size: 0.9em;">&lt;html&gt;
+  &lt;body&gt;
+      &lt;? php include "menu.inc"; ?&gt;
+      &lt;div class="main"&gt;
+          lorem ...
+      &lt;/div&gt;
+      &lt;? php include "rodape.inc"; ?&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Reutilizando Código</h2>
+        <p>
+          Conforme já descrito anteriormente, o comando <code>include</code> importa o código de um arquivo em outro. <em>Isto também é válido para código PHP!!</em>
+        </p>
+        <p>
+          Por meio do include, podemos importar trechos de código PHP, tais como funções, objetos, variáveis, etc.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Reutilizando Código</h2>
+        <div class="container_12" style="font-size:0.7em;">
+          <div class="grid_6">
+            <pre>
+              <code>$meses = array(...);
+$dia = date ("d", time());
+$mes = date ("m", time());
+$ano = date ("Y", time());
+echo "$dia de " . $meses[$mes-1] .
+ " de $ano";
+              </code>
+            </pre>
+            <a href="examples/example_code.php">Exemplo</a>
+          </div>
+          <div class="grid_6">
+            <pre>
+              <code>&lt;html&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Bem vindo&lt;/h1&gt;
+    &lt;h3&gt;
+      Agora são
+      &lt;?php include "date.inc"; ?&gt;.
+    &lt;/h3&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>O Comando <code>require</code></h2>
+        <p>
+          Além do comando <code>include</code>, o PHP contém outro comando para incluir arquivos: <code>require</code>
+        </p>
+        <p>
+          <b>Principal Diferença:</b> O <code>include</code> continua a carregar a página sem o arquivo, enquanto o comando <code>require</code> apresenta apresenta um erro de compilação se o arquivo não foi encontrado.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>O Comando <code>require</code></h2>
+        <div style="font-size: 0.8em;">
+          <pre>
+            <code>&lt;html&gt;
+&lt;body&gt;
+<mark> &lt;? php require "funcoes.inc"; ?&gt; </mark>
+  &lt;div class="main"&gt;
+    &lt;? php
+      if(!cpf_valido(_$GET["cpf"])) {
+        echo "CPF Inválido!!";
+      }
+    ?&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+          </pre>
+        </div>
+      </div>
+    </section>
+<!-- *************** FORMS **************** -->
+<header class="caption">
+      <h1>PHP: Formulários</h1>
+      <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+    </header>
+    <section class="slide cover">
+      <div>
+        <h2>PHP: Formulários</h2>
+        <p>João Eduardo Montandon</p>
+        <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Introdução</h2>
+        <p>
+          Os formulários representam um componente fundamental para comunicação entre usuário e aplicação web.
+        </p>
+        <p>
+          São por meio dos formulários que o usuário tem a oportunidade de enviar dados para o servidor.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Formulário: Exemplo</h2>
+        <div class="container_12">
+          <div class="grid_12">
+            <pre>
+              <code>
+&lt;form&gt;
+Nome: &lt;input type="text" name="nome"&gt; &lt;br&gt;
+Idade: &lt;input type="text" name="idade"&gt; &lt;br&gt;
+&lt;input type="submit" name="Enviar"&gt;
+&lt;/form&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Formulários</h2>
+        <p>
+          Ao se trabalhar com formulários, <b>dois</b> parâmetros precisam ser fornecidos:
+          <ol>
+            <li>A página para onde o formulário irá redirecionar</li>
+            <li>Qual tipo de requisição esse formulário irá disparar</li>
+          </ol>
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Formulário: Exemplo Completo</h2>
+        <pre>
+          <code>
+&lt;form action="pagina.html" method="post"&gt;
+  Login: &lt;input type="text" name="login"&gt; &lt;br&gt;
+  Senha: &lt;input type="password" name="senha"&gt; &lt;br&gt;
+  &lt;input type="submit" name="Log in"&gt;
+&lt;/form&gt;</code>
+        </pre>
+        <p class="note">
+          Para conhecer os campos existentes no formulário, acesse esse <a href="http://www.w3schools.com/tags/att_input_type.asp">link</a>.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Submetendo o Formulário</h2>
+        <p>
+          A ação de submeter envia os dados do formulário para o servidor, isto é, todos os dados fornecidos pelo usuário nos campos do formulário.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Submetendo o Formulário</h2>
+        <p>
+          A submissão é realizada por um componente HTML em específico: o <code>input</code> definido como <em>submit</em>
+        </p>
+        <pre>
+          <code>&lt;!-- Componente que faz a submissão --&gt;
+&lt;input type="submit" name="Submit"&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Tratando os Dados da Submissão</h2>
+        <p>
+          Em PHP, os dados enviados pela submissão podem ser recuperados por meio de dois vetores globais:
+          <ul>
+            <li><code>$_GET[]</code>: vetor que contém os dados enviados por meio de uma requisição do tipo GET.</li>
+            <li><code>$_POST[]</code>: vetor que contém os dados enviados por meio de uma requisição do tipo POST.</li>
+          </ul>
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Tratando os Dados da Submissão</h2>
+        <pre>
+          <code>
+$nome = $_GET["login"];
+$senha = $_GET["senha"];
+$nome = $_POST["login"];
+$senha = $_POST["senha"];
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Segurança: Code Injection</h2>
+        <form class="" action="examples/ola.php" method="post">
+          Nome: <input type="text" name="nome"> <br>
+          <input type="submit" name="Enviar">
+        </form>
+        <pre>
+          <code style="font-size: 0.7em;">
+&lt;?php $nome = $_POST["nome"]; ?&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Olá, &lt;?php echo "$nome"; ?&gt;&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Segurança: Code Injection</h2>
+        <p>
+          Quando um usuário insere um trecho de código que quebra o funcionamento do programa, no intuito de burlar o sistema e obter informações.
+        </p>
+        <p>
+          <em>Como resolver??</em>
+        </p>
+        <p>
+          <b>Anulando os caracteres especiais do trecho inserido</b>
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Segurança: Code Injection</h2>
+        <pre>
+          <code style="font-size: 0.8em;">
+&lt;?php
+  <mark>$nome = htmlspecialchars($_POST["nome"]);</mark>
+?&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Olá, &lt;?php echo "$nome"; ?&gt;&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Verificando Campos dos Formulários</h2>
+        <p>
+          O PHP disponibiliza algumas funções para ajudar na verificação dos dados inseridos pelo usuário
+        </p>
+        <table>
+          <tr>
+            <td><b>Função</b></td>
+            <td><b>Funcionalidade</b></td>
+          </tr>
+          <tr>
+            <td><code>empty($str)</code></td>
+            <td>Verifica se string está vazia</td>
+          </tr>
+          <tr>
+            <td><code>strlen($str)</code></td>
+            <td>Retorna tamanho da string</td>
+          </tr>
+          <tr>
+            <td><code>strstr($str, $str2)</code></td>
+            <td>Procura pela primeira ocorrência de <code>$str2</code></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <!-- **************** Sessões & Cookies ******************* -->
+    <header class="caption">
+      <h1>PHP: Sessions e Cookies</h1>
+      <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+    </header>
+    <section class="slide cover">
+      <div>
+        <h2>PHP: Sessions &amp; Cookies</h2>
+        <p>João Eduardo Montandon</p>
+        <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+      </div>
+    </section>
+    <section class="slide section">
+      <div>
+        <h2>P: Como o servidor sabe que você é você??</h2>
+      </div>
+    </section>
+    <section class="slide section">
+      <div>
+        <h2>R: Ele não sabe :(</h2>
+        <p>
+          O servidor, por si só, é incapaz de relacionar um identifcador a uma requisição.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>HTTP e o estado <em>stateless</em></h2>
+        <p>
+          Na verdade, isso é uma limitação do modelo do protocolo HTTP.
+        </p>
+        <p>
+          Em HTTP, as requisições são independentes umas das outras.
+        </p>
+        <p>
+          Como a conexão não é persistida, o container não reconhece que o cliente que fez a 2a requisição é o mesmo que fez a 1a.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>A Solução</h2>
+        <p>
+          <b>Solução:</b> Manter um espaço no cliente ou servidor que armazene os dados a serem enviados entre as requisições
+        </p>
+        <ul>
+          <li>Sessões: Técnica utilizada para armazenar informações no <b>servidor</b>.</li>
+          <li>Cookies: Técnica utilizada para armazenar informações no <b>usuário</b>.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide section">
+      <div>
+        <h2>Cookies</h2>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Cookies</h2>
+        <p>
+          Nada mais é do que um arquivo texto que é armazenado na máquina do usuário para ser recuperado posteriormente no servidor.
+        </p>
+        <p>
+          Contém valores formados por pares nome/valor (tuplas).
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Definindo Cookies</h2>
+        <pre>
+          <code>
+bool setcookie (string $name, string $value)
+          </code>
+        </pre>
+        <ul>
+          <li><code>$name</code> Nome do cookie a ser gravado/apagado</li>
+          <li><code>$value</code> Valor do cookie a ser gravado.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Definindo Cookies</h2>
+        <pre>
+          <code style="font-size:0.8em;">$login = $_POST["login"];
+$password = $_POST["password"];
+setcookie("login", $login); // adiciona cookie login
+setcookie("password", $password); // adiciona cookie password
+...
+setcookie("login"); // remove cookie login
+setcookie("password"); // remove cookie password
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Acessando Cookies</h2>
+        <p>
+          Os cookies podem ser acessados por meio do array <code>$_COOKIE</code>.
+        </p>
+        <p>
+          É importante ressaltar que os valores a serem recuperados pelo cookie só estarão disponíveis na requisição <b>seguinte</b> a sua definição.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Acessando Cookies</h2>
+        <pre>
+          <code>
+echo "O login digitado foi" . $_COOKIE['login'];
+echo "&lt;br&gt;";
+echo "A senha digitada foi" . $_COOKIE['password'];
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide section">
+      <div>
+        <h2>Sessões</h2>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Sessões</h2>
+        <p>
+          Permitem armazenar no servidor as informações de determinados usuários.
+        </p>
+        <p>
+          Consequentemente, o próprio servidor define o tempo de "validade" dessas informações.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Sessões</h2>
+        <p>
+          Cada sessão tem um identificador único -- denominado <em>session id</em> -- utilizado para identificar qual sessão pertence a qual usuário.
+        </p>
+        <p>
+          Este identificador é criado no momento em que o usuário acessa a página, e então é transmitido de duas formas:
+          <ol>
+            <li>Cookies</li>
+            <li><em>Query strings</em> (caso os cookies estejam desabilitados)</li>
+          </ol>
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Iniciando uma Sessão</h2>
+        <p>
+          A Sessão pode ser iniciada por meio do comando <code>session_start</code>
+        </p>
+        <pre>
+          <code>
+&lt;? php
+  session_start();
+?&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Registrando Variáveis em uma Sessão</h2>
+        <p>
+          Diferentemente de cookies, é possível armazenar qualquer tipo de valor em uma sessão (inteiros, strings, booleanos, arrays, objetos, etc).
+        </p>
+        <p>
+          Para registrar uma variável, lidamos diretamente com o array <code>$_SESSION</code>.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Registrando Variáveis em uma Sessão</h2>
+        <pre>
+          <code style="font-size: 0.9em;">&lt;? php
+  session_start();
+  if(!isset($_SESSION["contador"])) {
+    $_SESSION["contador"] = 1;
+  } else {
+    $_SESSION["contador"]++;
+  }
+?&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Lendo Variáveis de uma Sessão</h2>
+        <pre>
+          <code>&lt;? php
+  session_start();
+  // ...
+  // ... processamento ...
+  // ...
+  echo $_SESSION["contador"] . " acessos registrados";
+?&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Destruindo sessões</h2>
+        <p>
+          Quando não é mais necessário aquela sessão, devemos sempre destruí-la, para evitar que os dados possam ser acessados posteriormente.
+        </p>
+        <pre>
+          <code style="font-size: 0.9em;">&lt;? php
+      // fazendo logoff do usuário
+      session_destroy();
+?&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Sessões via <em>Query Strings</em></h2>
+        <p>
+          Mas e se os cookies estiverem desabilitados? #comofas??
+        </p>
+        <p>
+          O PHP possui uma constante (denominada <code>SID</code>) que armazena o session id do usuário.
+        </p>
+        <p>
+          Desta forma, basta enviar o valor dessa constante na URL da página.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Sessões via <em>Query Strings</em></h2>
+        <pre style="font-size: 0.8em;">
+          <code>&lt;? php
+  session_start();
+  //... processamento ...
+  echo "&lt;a href='minhaPagina.php?". SID . "'&gt;Clique aqui&lt;a/&gt;";
+?&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+<!-- *************** Arquivos ****************** -->
+<header class="caption">
+      <h1>PHP: Arquivos</h1>
+      <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+    </header>
+    <section class="slide cover">
+      <div>
+        <h2>PHP: Manipulação de Arquivos</h2>
+        <p>João Eduardo Montandon</p>
+        <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+      </div>
+    </section>
+    <section class="slide section">
+      <div>
+        <h2>Prog. = Processo + Dados</h2>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Introdução</h2>
+        <p>
+          Todo programa é composto por processamento e dados.
+        </p>
+        <p>
+          Ter uma rotina de armazenamento e recuperação consistente desses dados é <b>fundamental</b> para o "sucesso" de um sistema.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Arquivos</h2>
+        <p>
+          A manipulação de arquivos representa a forma mais simples de persistência de dados em uma aplicação.
+        </p>
+        <p>
+          Geralmente, os arquivos são separados por "assunto", e então o conteúdo deste arquivo reflete as informações armazenadas sobre o determinado assunto.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Arquivos</h2>
+        <p>
+          O PHP contém uma série de funções que auxiliam o processo de escrita e leitura de arquivos.
+        </p>
+        <div class="container_12" style="font-size:0.8em;">
+          <div class="grid_4">
+            <ul>
+              <li><code><b>fopen</b></code></li>
+              <li><code><b>fclose</b></code></li>
+              <li><code><b>fread</b></code></li>
+              <li><code><b>fgets</b></code></li>
+              <li><code><b>fwrite</b></code></li>
+            </ul>
+          </div>
+          <div class="grid_4">
+            <ul>
+              <li><code>copy</code></li>
+              <li><code>delete</code></li>
+              <li><code>fclose</code></li>
+              <li><code>feof</code></li>
+              <li><code>file_exists</code></li>
+            </ul>
+          </div>
+          <div class="grid_4">
+            <ul>
+              <li><code>file_get_contents</code></li>
+              <li><code>file_put_contents</code></li>
+              <li><code>file</code></li>
+              <li><code>fnmatch</code></li>
+              <li><code>is_dir</code></li>
+            </ul>
+          </div>
+          <p class="note">
+            Para lista completa das funções, acesse este <a href="http://php.net/manual/en/ref.filesystem.php">link</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Lidando com Arquivos</h2>
+        <div class="container_12">
+          <div class="grid_5">
+            <img src="images/arquivos-fluxograma.png" style="max-width:100%;" />
+          </div>
+          <div class="grid_6 prefix_1">
+            <ol>
+              <li>Abrir o arquivo</li>
+              <li>Manipular o arquivo (Leitura ou escrita)</li>
+              <li>Fechar o arquivo</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Abertura de Arquivo</h2>
+        <p>
+          Para abrir um arquivo, utilizamos a função <code>fopen</code>:
+        </p>
+        <div class="container_12">
+          <div class="grid_7">
+            <pre>
+              <code>
+fopen(nome_arquivo, modo);
+              </code>
+            </pre>
+          </div>
+          <div class="grid_5">
+            <ul>
+              <li><b>nome_arquivo:</b> Nome do arquivo a ser aberto.</li>
+              <li><b>modo:</b> <a href="http://php.net/manual/en/function.fopen.php">Modo</a> de abertura do arquivo.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Abertura de Arquivo</h2>
+        <pre>
+          <code style="font-size:0.85em;">
+$arquivo = fopen("/home/test/index.txt", "r");
+$arquivo = fopen("public/users.txt", "r+t");
+$arquivo = fopen("c:\\Meus Documentos\\Public\\config.bin", "w+b");
+$arquivo = fopen("http://www.meusite.com/", "rt");
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Fechamento de Arquivo</h2>
+        <p>
+          Para fechar um arquivo, utiliza-se a função <code>fclose</code>:
+        </p>
+        <pre>
+          <code>
+fclose(ponteiro_do_arquivo);
+          </code>
+        </pre>
+        <ul>
+          <li><b>ponteiro_do_arquivo:</b> Variável que contém o ponteiro do arquivo que está sendo manipulado.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Fechamento de Arquivo</h2>
+        <pre>
+          <code>&lt;? php
+  $arquivo = fopen("arquivo.txt", "r+");
+  /*
+    ... processamento do arquivo...
+  */
+  fclose($arquivo);
+?&gt;</code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Leitura: O comando <code>fread</code> </h2>
+        <p>
+          Faz a leitura de dados com base em uma quantidade de bytes enviada por parâmetro.
+        </p>
+        <pre>
+          <code style="font-size:0.8em;">&lt;? php
+  $arquivo = fopen("teste.txt", "r");
+  <mark>$conteudo = fread($arquivo, 30);</mark>
+  echo "$conteudo";
+  fclose($arquivo);
+?&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Leitura: O comando <code>fgets</code> </h2>
+        <p>
+          Faz a leitura de uma linha do arquivo.
+        </p>
+        <pre>
+          <code style="font-size:0.8em;">&lt;? php
+  $arquivo = fopen("teste.txt", "r");
+  while(!feof($arquivo)) {
+    <mark>$linha = fgets($arquivo);</mark>
+    echo "$linha &lt;br&gt;";
+  }
+  fclose($arquivo);
+?&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Escrita: O comando <code>fwrite</code> </h2>
+        <p>
+          Faz a escrita de dados no arquivo.
+        </p>
+        <pre>
+          <code style="font-size:0.8em;">&lt;? php
+  $arquivo = fopen("history.txt", "a");
+  $user = $_GET["user"];
+  $date = time();
+  <mark>fwrite($arquivo, "$user -- $date");</mark>
+  fclose($arquivo);
+?&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+    <!-- ******************* POO ********************* -->
+    <header class="caption">
+      <h1>PHP: POO</h1>
+      <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+    </header>
+    <section class="slide cover">
+      <div>
+        <h2>PHP: Programação Orientada a Objetos</h2>
+        <p>João Eduardo Montandon</p>
+        <p>Desenvolvimento de Aplicativos Web - COLTEC/MG</p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Introdução</h2>
+        <p>
+          Objetos: Forma de representar estruturas mais complexas no programa.
+        </p>
+        <p>
+          Como represento uma pessoa, carro, ou escola em meu programa?
+        </p>
+        <p>
+          Todo objeto possui duas características: atributos e ações
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div class="container_12">
+        <h2>Introdução</h2>
+        <div class="grid_8">
+          <p>
+            Os objetos são descritos por meio de uma <b>classe</b>. Toda classe descreve um conjunto de atributos e métodos.
+          </p>
+          <p>
+            Os <b>atributos</b> são representados por variáveis
+          </p>
+          <p>
+            As <b>ações</b> são representadas por métodos.
+          </p>
+        </div>
+        <div class="grid_4">
+          <img src="images/poo-exemplo.png" style="max-width:80%" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>PHP: Definindo uma classe</h2>
+        <pre>
+          <code>
+class nome_classe {
+  &lt; atributos &amp; métodos &gt;
+}
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <!-- <h2>PHP: Exemplo</h2> -->
+        <pre>
+          <code style="font-size:0.8em;">class Pessoa {
+  var $nome;
+  var $idade;
+  function Pessoa($nome, $idade) {
+    $this-&gt;nome = $nome;
+    $this-&gt;idade = $idade;
+  }
+  function falar($frase) {
+  	echo $frase;
+  }
+}
+$p = new Pessoa("Silvio Santos", 20);
+$p-&gt;falar("MAH OEEEHHHH!!");
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>PHP: Atributos</h2>
+        <p>
+          Os atributos devem ser criados por meio da palavra-chave <code>var</code>,e são acessados dentro dos métodos por meio do termo <code>$this</code>
+        </p>
+        <pre style="font-size: 0.9em;">
+          <code>class classe {
+  var $nome_variavel;
+  function f() {
+    $this-&gt;nome_variavel = 75;
+  }
+}
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>PHP: Métodos</h2>
+        <p>
+          Os métodos são criados da mesma forma que anterior, porém dentro das classes.
+        </p>
+        <pre>
+          <code style="font-size: 0.9em;">class classe {
+  // atributos ...
+  function executar() {
+    // código
+  }
+}
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Métodos: Construtores</h2>
+        <p>
+          <b>Construtores:</b> métodos especiais que são executados toda vez que uma nova classe é instanciada. Representado pelo método <code>__construct()</code>.
+        </p>
+        <pre style="font-size: 0.8em;">
+          <code>class classe {
+  function __construct() {
+    echo "Chamando o construtor. Instanciação da classe!!";
+  }
+}
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Métodos: Destrutores</h2>
+        <p>
+          Método que é invocado toda vez que a instância de uma classe é destruída. Declara-se um destrutor por meio do método <code>__destruct()</code>.
+        </p>
+        <pre style="font-size: 0.8em;">
+          <code>class classe {
+  function __destruct() {
+    echo "Chamando destrutor. Destruindo objeto!!";
+  }
+}
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <pre>
+          <code style="font-size: 0.7em;">class BancoDeDados {
+  var $enderecoDB;
+  function __construct($enderecoDB) {
+    $this-&gt;enderecoDB = $enderecoDB;
+  }
+  function connect() {
+    echo "Se conectando ao Banco de dados no endereco $this-&gt;enderecoDB\n";
+  }
+  function __destruct() {
+    echo "Desconectando do Banco de dados";
+  }
+}
+$db = new BancoDeDados("150.164.0.132:5481");
+$db-&gt;connect();
+$db = null;
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide section">
+      <div>
+        <h2>Programação Orientada a Objetos: Pt2.</h2>
+        <p>
+          Visibilidade, herança, interfaces, etc.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Visibilidade</h2>
+        <p>
+          Como em outras linguagens, o PHP também permite atribuir níveis de visibilidade a determinados elementos da classe.
+        </p>
+        <p>
+          Os níveis de visibilidade podem ser atribuídos a atributos, métodos, e definições de classes.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Visibilidade</h2>
+        <p>
+          Mais especificamente, o PHP oferece três opções de visibilidade:
+        </p>
+        <ul>
+          <li><code>private</code> Restringe a visibilidade do elemento apenas a classe na qual ele foi criado</li>
+          <li><code>protected</code> Elemento visível para classe e subclasses</li>
+          <li><code>public</code> Elemento visível publicamente (default)</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Visibilidade: Exemplo</h2>
+        <pre>
+          <code>
+class Pessoa {
+  private var $nome;
+  private var $idade;
+  protected function imprimeRelatorio() {
+    //...
+  }
+  public function imprimePessoa() {
+    //...
+  }
+}
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Herança</h2>
+        <p>
+          O mecanismo de herança é uma das peças fundamentais para a POO.
+        </p>
+        <p>
+          A herança permite o uso de <b>polimorfismo</b> nas linguagens de programação.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Herança</h2>
+        <p>
+          Similar ao Java, o PHP pode estender três "tipos" de classes:
+        </p>
+        <ol>
+          <li>Classes normais</li>
+          <li>Classes abstratas, neste caso implementando os métodos abstratos</li>
+          <li>Interfaces, implementando os métodos descritos na interface</li>
+        </ol>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Herança: classes normais</h2>
+        <div class="container_12">
+          <div class="grid_6">
+            <pre>
+              <code>
+class Classe1 {
+  public function bomDia() {
+    echo "Bom dia!! &lt;br&gt;";
+  }
+}
+              </code>
+            </pre>
+          </div>
+          <div class="grid_6">
+            <pre>
+              <code>
+class Classe2 <mark>extends</mark> Classe1 {
+  public function bomDia() {
+    Classe1::bomDia();
+    echo "Olá!!&lt;br&gt;";
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Herança: classes abstratas</h2>
+        <p>
+          Ao se anotar uma classe como abstrata, a linguagem permite que o programador apenas declare certos métodos, deixando para as subclasses implementarem sua funcionalidade.
+        </p>
+        <p>
+          Classes abstratas não podem ser instanciadas diretamente.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Herança: classes abstratas</h2>
+        <div class="container_12">
+          <div class="grid_6">
+            <pre>
+              <code>
+abstact class ClasseAbstrata {
+  abstract public function teste();
+}
+              </code>
+            </pre>
+          </div>
+          <div class="grid_6">
+            <pre>
+              <code>
+class Classe <mark>extends</mark> ClasseAbstrata {
+  public function teste() {
+    echo "Método teste() chamado!! &lt;br&gt;";
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Herança: Interfaces</h2>
+        <p>
+          <b>Interface:</b> contrato que define tudo o que uma classe deve fazer se quiser herdar as características daquele grupo.
+        </p>
+        <!-- <p>
+          Só reforçando... as interfaces são uma forma de estabalecer um <b>contrato</b> -- padrão -- entre as classes que desejam ter determinadas características.
+        </p> -->
+        <p class="quote">
+          Program to an 'interface', not an 'implementation'.
+        </p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Herança: Interfaces</h2>
+        <div class="container_12">
+          <!-- <div class="grid_6"> -->
+            <pre>
+              <code>interface MinhaInterface {
+  function teste();
+}
+class Classe <mark>implements</mark> MinhaInterface {
+  function teste() {
+    //...
+  }
+}
+              </code>
+            </pre>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>A palavra-chave <code>final</code></h2>
+        <p>
+          <code>final</code> Palavra chave que bloqueia a modificação/extensão de métodos e classes
+        </p>
+        <ul>
+          <li><b>Métodos:</b> Não podem ser sobrecarregados pela subclasse.</li>
+          <li><b>Classes:</b> Não podem ser sobrescritas.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2><code>final</code> - Exemplo</h2>
+        <div class="container_12">
+          <div class="grid_6">
+            <pre>
+              <code>
+class Classe {
+  public final metodo() {/* ... */}
+}
+class Classe2 extends Classe {
+  public metodo() {/* ERRO!! */}
+}
+              </code>
+            </pre>
+          </div>
+          <div class="grid_6">
+            <pre>
+              <code>
+final class Classe {
+  public metodo() { /* ... */ }
+}
+/* ERRO!! */
+class Classe2 extends Classe { }
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="slide">
       <div>
         <h2>Referências</h2>
@@ -743,17 +2223,14 @@ escopo();
           </p>
           <p>
             <a href="http://www.w3schools.com/php/">w3schools: PHP Tutorial</a>
-</p>
-<p>
-  <a href="http://www.php.net">PHP.net</a>
-</p>
-
+          </p>
+          <p>
+            <a href="http://www.php.net">PHP.net</a>
+          </p>
           </p>
       </div>
     </section>
-
     <p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
-
 	<!-- Barra de progresso, comente se deseja remover da apresentação -->
 	<div class="progress"><div></div></div>
 	<script src="libs/shower/shower.min.js"></script>

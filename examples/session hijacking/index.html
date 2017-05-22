@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log in</title>
+  </head>
+  <body>
+    <h1>Bem vindo ao nosso sistema</h1>
+
+    <form action="main.php" method="post">
+      Nome: <input type="text" name="login"> <br>
+      Seredo: <input type="password" name="segredo"> <br>
+      <input type="submit" value="Enviar segredo">
+    </form>
+
+<h2>Obter segredo</h2>
+<form action="changeSID.php" method="post">
+  Chave do segredo: <input type="text" name="sid" value="">
+  <input type="submit" value="Alterar">
+</form>
+
+  </body>
+</html>
